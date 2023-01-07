@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Styles/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=5677bdd1e1fee004f95e1ba9e9e9dbd2&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="overlay" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; align-items: center; justify-content: center; flex-grow: 1;">
+        <ui:VisualElement name="panel" style="align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.78);">
+            <ui:VisualElement name="Header">
+                <ui:Label text="Are you sure you want to exit?" display-tooltip-when-elided="true" style="font-size: 18px; color: rgba(241, 241, 241, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Footer">
+                <ui:Button text="YES" display-tooltip-when-elided="true" name="ButtonYes" class="button" />
+                <ui:Button text="NO" display-tooltip-when-elided="true" name="ButtonNo" class="button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="QuitConfirmationModal" src="project://database/Assets/Resources/UI/Templates/QuitConfirmationModal.uxml?fileID=9197481963319205126&amp;guid=81641db455078ef45a2510e44e256368&amp;type=3#QuitConfirmationModal" />
+    <ui:Template name="SettingsModal" src="project://database/Assets/Resources/UI/Templates/SettingsModal.uxml?fileID=9197481963319205126&amp;guid=f56a22c5b0d8be34ea88b9a9f93e5347&amp;type=3#SettingsModal" />
+    <Style src="project://database/Assets/Resources/UI/Styles/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=5677bdd1e1fee004f95e1ba9e9e9dbd2&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="RootContainer" style="flex-grow: 1; background-color: rgb(135, 112, 112);">
+        <ui:VisualElement name="MainMenuContainer" style="align-items: center; justify-content: center; flex-grow: 1;">
+            <ui:Button text="START" display-tooltip-when-elided="true" name="ButtonStart" class="button" style="overflow: hidden;" />
+            <ui:Button text="SETTINGS" display-tooltip-when-elided="true" name="ButtonSettings" class="button" />
+            <ui:Button text="EXIT GAME" display-tooltip-when-elided="true" name="ButtonExit" class="button" />
+        </ui:VisualElement>
+        <ui:Instance template="QuitConfirmationModal" name="QuitConfirmationModal" style="display: none; position: absolute; left: 0; top: 0; right: 0; bottom: 0; align-items: center; justify-content: center;" />
+        <ui:Instance template="SettingsModal" name="SettingsModal" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;" />
+    </ui:VisualElement>
+</ui:UXML>

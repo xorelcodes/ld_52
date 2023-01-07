@@ -1,0 +1,29 @@
+.button {
+    width: 150px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    background-color: rgba(113, 29, 29, 255);
+    color: rgba(231, 231, 231, 255);
+}
+
+.button:hover {
+    width: 150px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    background-color: rgba(226, 37, 37, 255);
+    color: rgba(200, 200, 200, 255);
+}
+
+.button:active {
+    width: 150px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    background-color: rgba(236, 137, 137, 255);
+    color: rgba(135, 135, 135, 255);
+}

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="panel" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; flex-grow: 1; flex-direction: column; background-color: rgba(0, 0, 0, 0.78);">
+        <ui:VisualElement name="Header" style="align-items: flex-end;">
+            <ui:Button text="X" display-tooltip-when-elided="true" name="ButtonClose" style="align-items: stretch; width: 50px; height: 50px;" />
+        </ui:VisualElement>
+        <AudioSettingsElement />
+    </ui:VisualElement>
+</ui:UXML>
