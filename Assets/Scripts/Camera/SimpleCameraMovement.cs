@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SimpleCameraMovement : MonoBehaviour
 {
-    public float scrollSpeed = .003f;
+    public float scrollSpeed = 5f;
     public GameObject sidebar;
 
     void Start(){
@@ -37,6 +37,7 @@ void Update()
 if (Input.GetKey(KeyCode.A))
 {
 transform.Translate(Vector3.right * -scrollSpeed * Time.deltaTime);
+Debug.Log("Camera go left");
 }
 
 if (Input.GetKey(KeyCode.D))

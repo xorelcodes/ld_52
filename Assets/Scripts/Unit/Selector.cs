@@ -13,6 +13,7 @@ public class Selector : MonoBehaviour
     }
 
     private void OnMouseDown() {
+        Debug.Log("Bee Clicked");
         selectSprite.SetActive(true);
     }
 }
