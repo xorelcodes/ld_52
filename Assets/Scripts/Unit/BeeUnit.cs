@@ -15,6 +15,8 @@ Vector3 worldPosition;
     bool isMoving = false;
 
     private IEnumerator movementCoroutine;
+
+    public float MovementSpeed = 3f;
  
 void Start(){
     spriteRenderer = GetComponent<SpriteRenderer>();
@@ -71,7 +73,6 @@ public void ClearSelection(){
    IEnumerator MoveCommand(Vector3 start, Vector3 end)
     {
             float elapsedTime = 0;
-            float waitTime = 3f;
 
             if(start.x < end.x){
                 spriteRenderer.flipX = true;
@@ -80,11 +81,11 @@ public void ClearSelection(){
             }
 
                     isMoving = true;
-             while (elapsedTime < waitTime)
+             while (elapsedTime < MovementSpeed)
                 {
                     elapsedTime += Time.deltaTime;
-                    if (elapsedTime > waitTime) elapsedTime = waitTime;
-                    float newTime = elapsedTime / waitTime;
+                    if (elapsedTime > MovementSpeed) elapsedTime = MovementSpeed;
+                    float newTime = elapsedTime / MovementSpeed;
                     newTime = newTime * newTime * (3f - 2f * newTime);
 
                     transform.position = Vector3.Lerp(start, end, newTime);

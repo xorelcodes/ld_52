@@ -65,7 +65,7 @@ void Awake(){
         if(Input.GetMouseButtonDown(1)){
             Vector3 destination = GetMousePosition();
 
-            List<Vector3>targetPositionList = GetPositionListAround(destination, 1f, 5);
+            List<Vector3>targetPositionList = GetPositionListAround(destination, 1f, selectedBeeUnits.Count);
 
             int targetPositionListIndex = 0;
             foreach(BeeUnit beeUnit in selectedBeeUnits){
