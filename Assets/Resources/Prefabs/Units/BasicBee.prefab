@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7642601997732908291}
   - component: {fileID: 257525300518677587}
   - component: {fileID: 480891013609580437}
-  - component: {fileID: 480891013609580436}
+  - component: {fileID: 2383809942390976539}
   m_Layer: 0
   m_Name: BasicBee
   m_TagString: Worker
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1764670527
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 498014485, guid: f3903f9ec31450a45bfdcf319d63b36a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -117,7 +117,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7642601997732908288}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -156,7 +156,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1661151, y: 0.122221045}
   m_EdgeRadius: 0
---- !u!114 &480891013609580436
+--- !u!114 &2383809942390976539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,11 +165,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7642601997732908288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8646d80358d8bcc468127a89922314eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 12f94706c02bc2d4a994e913203cb657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   selectSprite: {fileID: 7642601998120979482}
   MovementSpeed: 3
+  savedResourceDropOff: {fileID: 0}
+  savedResourcePickup: {fileID: 0}
+  TimeToGather: 2
+  TimeToDropOff: 0.5
 --- !u!1 &7642601998120979482
 GameObject:
   m_ObjectHideFlags: 0

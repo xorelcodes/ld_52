@@ -4,8 +4,10 @@ using UnityEngine;
 
 public interface IUnit
 {
-    
-    bool isIdle();
-    void MoveTo(Vector3 position, float stopdistance, AccelerationEvent onArrivedAtPosition);
-    void PlayAnimationGather(Vector3 lookAtPosition, AccelerationEvent onAnimationCompleted);
+    void MoveUnit(Vector3 destination);
+    void StopMovement();
+    void SelectUnit();
+    void ClearSelection();
+    void OnMouseDown();
+    IEnumerator MoveCommand(Vector3 start, Vector3 end);
 }
