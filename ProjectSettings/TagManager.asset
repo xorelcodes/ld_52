@@ -9,6 +9,7 @@ TagManager:
   - Building
   - GatherNode
   - Enemy
+  - DropOffNode
   layers:
   - Default
   - TransparentFX
